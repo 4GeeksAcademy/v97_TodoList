@@ -3,8 +3,8 @@ import TodoContainer from "./TodoContainer";
 
 
 //create your first component
-const Home = (props) => {
-	const{index} = props;
+const Home = () => {
+	
 	return (
 
 		<>

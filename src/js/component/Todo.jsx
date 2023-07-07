@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
+
 export default function Todo(props) {
   const { todo, removeTodo, index } = props;
   const [showDelete, setShowDelete] = useState(false);
 
   return (
-    <div>
+
     
       <div
         id="input"
@@ -15,15 +16,15 @@ export default function Todo(props) {
       >
         
         <p style={{marginBottom:"0px"}}>{todo}</p>
+
         {showDelete && (
-          <p onClick={() => removeTodo(index)}>
+          <p id="deleteIcon" onClick={() => removeTodo(index)}>
             <i className="fa-solid fa-xmark"></i>
           </p>
+
         )}
+
       </div>
-      
-      
-      
-    </div>
-  );
+    
+  )
 }
